@@ -16,13 +16,7 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&zip_temp_layer 8 10000>;
-    };
-};
+
 
 &pinctrl {
     spi0_default: spi0_default {    //通常時(SPI通信中)のピン構成a
@@ -75,7 +69,9 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        input-processors = <&zip_temp_layer 8 10000>;
     scroller {
         layers = <3>;
         input-processors = 
