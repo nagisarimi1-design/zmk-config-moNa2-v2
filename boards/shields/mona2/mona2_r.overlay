@@ -66,7 +66,7 @@
 
 
 // Overrides for the input listener node
-&trackball_listener {
+trackball_listener {
     status = "okay";
     device = <&trackball>;
     trackball_listener {
