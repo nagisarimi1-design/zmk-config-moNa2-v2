@@ -9,7 +9,7 @@ layers:
   - Y
   - U
   - I
-  - O
+  - {t: O, h: '3'}
   - P
   - A
   - S
@@ -138,7 +138,7 @@ layers:
   - {t: ▽, type: trans}
   - HOME
   - UP ARROW
-  - END
+  - {t: END, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+LEFT ARROW
@@ -168,7 +168,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
