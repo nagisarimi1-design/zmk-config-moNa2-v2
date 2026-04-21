@@ -16,7 +16,7 @@ layers:
   - D
   - F
   - G
-  - F13
+  - '-'
   - H
   - J
   - K
@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - F14
-  - F15
+  - '"'
   - N
   - M
   - ','
@@ -41,7 +41,7 @@ layers:
   - {t: SPACE, h: '2'}
   - {t: '&to_layer_0 LANG2', h: '3'}
   - BACKSPACE
-  - {t: ENTER, h: '2'}
+  - {t: ENTER, h: '1'}
   - LEFT ALT
   '1':
   - '1'
@@ -84,7 +84,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   '2':
   - {t: ▽, type: trans}
