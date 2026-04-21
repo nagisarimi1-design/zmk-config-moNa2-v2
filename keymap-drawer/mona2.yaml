@@ -37,9 +37,9 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: INT MUHENKAN, h: '4'}
+  - {t: LANGUAGE 2, h: '4'}
   - {t: SPACE, h: '2'}
-  - {t: '&to_layer_0 INT_HENKAN', h: '3'}
+  - {t: LANGUAGE 1, h: '3'}
   - BACKSPACE
   - {t: ENTER, h: '1'}
   - LEFT ALT
