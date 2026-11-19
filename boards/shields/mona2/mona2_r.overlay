@@ -78,6 +78,16 @@
             <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
     };
 
+    gesture_tabs {
+        layers = <6>;
+        input-processors = <&zip_mouse_gesture>;
+    };
+
+    gesture_desktop {
+        layers = <7>;
+        input-processors = <&zip_mouse_gesture_desktop>;
+    };
+
 };
 &zip_temp_layer {
     excluded-positions = <
