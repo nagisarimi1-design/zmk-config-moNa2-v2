@@ -131,14 +131,14 @@ layers:
   - {t: ▽, type: trans}
   '3':
   - PG UP
-  - {t: ▽, type: trans}
+  - HOME
   - UP ARROW
-  - {t: ▽, type: trans}
+  - END
   - PG DN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - HOME
   - Gui+UP ARROW
-  - {type: held}
+  - {t: END, type: held}
   - {t: ▽, type: trans}
   - HOME
   - LEFT ARROW
