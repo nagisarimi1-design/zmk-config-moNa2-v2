@@ -145,7 +145,7 @@ layers:
   - DOWN ARROW
   - RIGHT ARROW
   - END
-  - Ctl+Gui+PSCRN
+  - Gui+Sft+S
   - {t: ▽, type: trans}
   - Gui+LEFT ARROW
   - Gui+DOWN ARROW
