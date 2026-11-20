@@ -7,6 +7,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <mouse-gesture.dtsi>
 
+#define GAME 8
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -83,16 +85,19 @@
         layer4_ESC {
             bindings = <&lt 4 ESC>;
             key-positions = <39 38>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         // O+P：タップで Alt+Tab、長押しでデスクトップ操作ジェスチャー
@@ -180,7 +185,7 @@
             bindings = <
 &trans  &kp N7  &kp N8  &kp N9  &kp PLUS                     &trans  &kp F7  &kp F8  &kp F9  &kp F12
 &trans  &kp N4  &kp N5  &kp N6  &kp MINUS            &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans    &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10
+&kp N0  &kp N1  &kp N2  &kp N3  &kp EQUAL  &tog GAME &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10
 &trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans                          &trans
             >;
 
@@ -234,6 +239,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
+        };
+
+        // ゲームレイヤー：長押し機能・同時押しなし。Space長押し＋=の右で入る／同じ位置か右下で戻る
+        game_layer {
+            bindings = <
+&kp Q          &kp W         &kp E         &kp R    &kp T                                       &kp Y    &kp U  &kp I      &kp O    &kp P
+&kp A          &kp S         &kp D         &kp F    &kp G                         &kp MINUS     &kp H    &trans &trans     &trans   &kp SEMICOLON
+&kp LEFT_SHIFT &kp X         &kp C         &kp V    &kp B      &tog GAME          &kp DOUBLE_QUOTES &kp N &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL      &kp LEFT_WIN  &kp LEFT_ALT  &kp TAB  &kp SPACE  &kp ESC            &kp BACKSPACE &kp ENTER                           &tog GAME
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
