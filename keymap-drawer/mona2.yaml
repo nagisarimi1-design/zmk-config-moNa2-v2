@@ -113,7 +113,7 @@ layers:
   - '2'
   - '3'
   - '='
-  - {t: ▽, type: trans}
+  - {t: game, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
@@ -344,13 +344,59 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  game:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - '-'
+  - H
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ;
+  - LEFT SHIFT
+  - X
+  - C
+  - V
+  - B
+  - {t: game, h: toggle}
+  - '"'
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - TAB
+  - SPACE
+  - ESC
+  - BACKSPACE
+  - ENTER
+  - {t: game, h: toggle}
 combos:
 - p: [39, 38]
   k: {t: ESC, h: '4'}
+  l: [default, '1', '2', '3', '4', mouse, gesture_tabs, gesture_desktop]
 - p: [11, 12]
   k: TAB
+  l: [default, '1', '2', '3', '4', mouse, gesture_tabs, gesture_desktop]
 - p: [0, 1]
   k: ESC
+  l: [default, '1', '2', '3', '4', mouse, gesture_tabs, gesture_desktop]
 - p: [8, 9]
   k: {t: Alt+TAB, h: gesture_desktop}
   l: [default]
